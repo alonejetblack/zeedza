@@ -1613,7 +1613,7 @@ async def maxgieBot(op):
                                                 "size": "xxl",
                                                 "weight": "bold",
                                                 "align": "center",
-                                                "color": "#CD1076"
+                                                "color": "#FF000"
                                             },
                                             { 
                                                 "type": "text",

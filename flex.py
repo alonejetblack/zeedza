@@ -1422,7 +1422,7 @@ async def maxgieBot(op):
                                             {
                                                 "type": "text",
                                                 "text": sa,
-                                                "color": "#FF0000" 
+                                                "color": s,
                                                 "wrap": True,
                                                 "gravity": "center",
                                         #        "size": "md"
@@ -1476,7 +1476,7 @@ async def maxgieBot(op):
                                             {
                                                 "type": "text",
                                                 "text": ss, 
-                                                "color": "#FF0000"
+                                                "color": s,
                                                 "wrap": True,
                                                 "gravity": "center",
                                             },
@@ -1529,7 +1529,7 @@ async def maxgieBot(op):
                                             {
                                                 "type": "text",
                                                 "text": se, 
-                                                "color": "#FF0000"
+                                                "color": s,
                                                 "wrap": True,
                                                 "gravity": "center",
                                             },
@@ -1590,7 +1590,7 @@ async def maxgieBot(op):
                                             {
                                                 "type": "text",
                                                 "text": sd, 
-                                                "color": "#FF0000"
+                                                "color": s,
                                            #     "size": "lg",
                                                 "wrap": True,
                                                 "gravity": "center",
@@ -1658,7 +1658,7 @@ async def maxgieBot(op):
                                             {
                                                 "type": "text",
                                                 "text": sti, 
-                                                "color": "#FF0000"
+                                                "color": s,
                                                 "wrap": True,
                                                 "gravity": "center",
                                             },

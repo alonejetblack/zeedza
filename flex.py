@@ -135,8 +135,8 @@ tagadd = {
     "add": "ยินดีที่ได้รู้จักนะครับ 😃\nรับแอดละน้า. >_<",
     "wctext": "ยินดีต้อนรับเข้ากลุ่มนะครับ 😃",
     "lv": "บ๊ายบาย >< ขอให้เธอโชคดีงับ >_<",
-    "b": "บัญชีนี้ถูกป้องกันด้วย Self Bot Max ระบบได้บล็อคบัญชีคุณอัตโนมัติ >_<",
-    "m": "สวัสดีครับ ผมมุดลิ้งมานะครับ >_<",
+    "b": "บัญชีนี้ถูกป้องกันด้วย Self Bot Prem ระบบได้บล็อคบัญชีคุณอัตโนมัติ",
+    "m": "สวัสดีครับ ผมมุดลิ้งมานะครับ",
 }
 apalo = {
     "blacklist":{},
@@ -660,7 +660,7 @@ async def maxgieBot(op):
                          "size":"full",
                          "action": {
                              "type": "uri",
-                             "uri": "line://ti/p/~aboutme.."
+                             "uri": "line://ti/p/~0830731525"
                          }
                     },
                 }
@@ -729,7 +729,7 @@ async def maxgieBot(op):
                          "size":"full",
                          "action": {
                              "type": "uri",
-                             "uri": "line://ti/p/~aboutme.."
+                             "uri": "line://ti/p/~0830731525"
                          }
                     },
                 }
@@ -1287,7 +1287,7 @@ async def maxgieBot(op):
                                         "type": "text",
                                         "text": "{}".format(sa),
                                         "wrap": True,
-                                        "color": "#FFFFFF",
+                                        "color": "#FF0000",
                                         "gravity": "center",
                                         "size": "md"
                                     },
@@ -1609,7 +1609,7 @@ async def maxgieBot(op):
                                             },
                                           #  {
                                           #      "type": "text",
-                                          #      "text": "สนใจบอท ติดต่อได้ที่ปุ่มเลยค้ะ >_<",
+                                          #      "text": "สนใจบอท ติดต่อได้ที่ปุ่มเลยคับ",
                                           #      "color": "#B5B5B5",
                                           #      "size": "xs"
                                           #  },
@@ -1752,20 +1752,7 @@ async def maxgieBot(op):
                             image = str(cu)
                             maxgie.generateReplyMessage(msg.id)
                             maxgie.sendReplyImageWithURL(msg.id, to, image)
-                if text.lower() == "me":
-                    cover = maxgie.getProfileCoverURL(maxgie.profile.mid)
-                    pp = maxgie.getProfile().pictureStatus
-                    profile = "https://profile.line-scdn.net/" + str(pp)
-                    name = maxgie.getProfile().displayName
-                    status = maxgie.getProfile().statusMessage
-                    s = temp["te"]
-                    a = temp["t"]
-                    data={"type":"flex","altText":"{} sendFlex".format(name),"contents":{"type":"bubble",'styles': {"body":{"backgroundColor":a}},"hero":{"type":"image","url":cover,"size":"full","aspectRatio":"20:13","aspectMode":"cover"},"body":{"type":"box","layout":"vertical","contents":[{"type":"text","text":" "},{"type":"image","url":profile,"size":"lg"},{"type":"text","text":" "},{"type":"text","text":name,"size":"xl","weight":"bold","color":s,"align":"center"},{"type":"text","text":" "},{"type":"text","text":status,"align":"center","size":"xs","color":s,"wrap":True},{"type":"text","text":" "},{"type":"button","style":"primary","color":"#669999","action":{"type":"uri","label":"ADD ME","uri":"line://app/1602687308-GXq4Vvk9?type=video&ocu=https://is.gd/pv49jP&piu=https://i.pinimg.com/originals/63/c4/12/63c412c55c99b6e0742bebaf53dd40d6.jpg"}}]}}}
-                    sendTemplate(to, data)
-                if text.lower() == "me1":
-                    contact = maxgie.getContact(sender)
-                    sendTemplate(to,{"type":"flex","altText": "FCK_VEZA","contents":{"type":"bubble","footer":{"type":"box","layout":"horizontal","contents":[{"color":"#FF69B4","size":"xs","wrap":True,"action":{"type":"uri","uri":"line://app/1636169025-yQ7bGMVA?type=profile"},"type":"text","text":"VH_LittleBot","align":"center","weight":"bold"},{"type":"separator","color":"#FF69B4"},{"color":"#FF69B4","size":"xs","wrap":True,"action":{"type":"uri","uri":"line://ti/p/~aboutme.."},"type":"text","text":"Chat_Me","align":"center","weight":"bold"}]},"styles":{"footer":{"backgroundColor":"#FFD2E6"},"body":{"backgroundColor":"#ffffff"}},"body":{"type":"box","contents":[{"type":"box","contents":[{"type":"separator","color":"#FF69B4"},{"aspectMode":"cover","gravity":"bottom","aspectRatio":"1:1","size":"sm","type":"image","url":"https://i.ibb.co/ZXzddDh/Pics-Art-01-07-05-35-09.png"},{"type":"separator","color":"#FF69B4"},{"type":"image","aspectMode":"cover","aspectRatio":"1:1","size":"sm","url":"https://i.ibb.co/GdwQtdS/Screenshot-2018-1215-233501.png"},{"type":"separator","color":"#FF69B4"},{"type":"image","aspectMode":"cover","aspectRatio":"1:1","size":"sm","url":"https://media.giphy.com/media/qqWB4u3mrTlrG/giphy.gif"},{"type":"separator","color":"#FF69B4"},{"type":"image","aspectMode":"cover","aspectRatio":"1:1","size":"sm","url":"https://i.pinimg.com/originals/a6/94/ec/a694ec9773292abec803f07befd73e74.gif"},{"type":"separator","color":"#FF69B4"}],"layout":"vertical","spacing":"none","flex":1},{"type":"separator","color":"#FF69B4"},{"type":"box","contents":[{"type":"separator","color":"#FF69B4"},{"color":"#413877","size":"md","wrap":True,"type":"text","text":"MAXGIE BOTS","weight":"bold"},{"type":"separator","color":"#FF69B4"},{"color":"#413877","size":"md","wrap":True,"type":"text","text":"{}".format(contact.displayName),"weight":"bold"},{"type":"separator","color":"#FF69B4"},{"color":"#FF69B4","size":"xs","wrap":True,"type":"text","text":"Status Profile:","weight":"bold"},{"type":"text","text":"{}".format(contact.statusMessage),"size":"xxs","wrap":True,"color":"#422002"}],"layout":"vertical","flex":2}],"layout":"horizontal","spacing":"md"},"hero":{"aspectMode":"cover","margin":"xxl","aspectRatio":"1:1","size":"full","type":"image","url":"https://obs.line-scdn.net/{}".format(contact.pictureStatus)}}})
-                elif text.lower() == "/me":
+                elif text.lower() == "me":
                             s = temp["te"]
                             a = temp["t"]
                             contact = maxgie.getContact(maxgieMID)
@@ -3081,7 +3068,7 @@ async def maxgieBot(op):
                 #                "size":"sm",
                 #                "action": {
                 #                    "type": "uri",
-                #                    "uri": "line://ti/p/~aboutme.."
+                #                    "uri": "line://ti/p/~0830731525"
                 #                }
                 #            },
                 #        }
